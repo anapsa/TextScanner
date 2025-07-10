@@ -21,48 +21,24 @@ struct ContentView: View {
                 case .scannerAvailable:
                     ScannerView()
                 case .cameraNotAvailable:
-                    Text("Your device doesn't have a camera")
+                    Text("Seu dispositivo não possui uma câmera")
                 case .scannerNotAvailable:
-                    Text("Your devide doesn't have support for scanner ")
+                    Text("Seu dispositivo não possui suporte para o scanner")
                 case .notDetermined:
-                    Text("Requesting caamera access")
+                    Text("Solicitando acesso a câmera")
                 case .cameraAccessNotGranted:
-                    Text("Please provide access to the camera in settings")
+                    Text("Por favor, libere o acesso a câmera nas configurações do dispositivo")
 
-                
             }
         }
+        .ignoresSafeArea()
         .padding()
     }
     
 
     
 }
-struct ScannerView: View{
-    @EnvironmentObject var viewmodel: ViewModel
-    var body: some View{
-        VStack {
-            ScannerController(recognizedItems:$viewmodel.recognizedItems)
-            VStack {
-                ScrollView {
-                    LazyVStack(alignment: .leading, spacing: 16) {
-                        ForEach(viewmodel.recognizedItems) { item in
-                            Group {
-                                switch item {
-                                case .text(let recognizedText):
-                                    Text(recognizedText.transcript) 
-                                default:
-                                    Text("Unknown Value")
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    
-    }
-}
+
 #Preview {
     ContentView()
 }

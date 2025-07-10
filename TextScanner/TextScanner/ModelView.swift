@@ -10,14 +10,6 @@ import VisionKit
 import Foundation
 import AVKit
 
-
-enum AccessStatusType {
-    case notDetermined
-    case cameraAccessNotGranted
-    case cameraNotAvailable
-    case scannerAvailable
-    case scannerNotAvailable
-}
 @MainActor
 final class ViewModel: ObservableObject {
     @Published var accessStatus: AccessStatusType = .notDetermined

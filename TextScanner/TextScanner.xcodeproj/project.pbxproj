@@ -13,6 +13,8 @@
 		DD14F4062C9C9C6200F6C0CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD14F4052C9C9C6200F6C0CA /* Preview Assets.xcassets */; };
 		DD14F40D2C9C9CFC00F6C0CA /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD14F40C2C9C9CFC00F6C0CA /* ModelView.swift */; };
 		DD14F40F2C9C9F3100F6C0CA /* ScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD14F40E2C9C9F3100F6C0CA /* ScannerController.swift */; };
+		DD4FC54C2E1F4BC6003DC5D3 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FC54B2E1F4BC2003DC5D3 /* ScannerView.swift */; };
+		DD4FC54E2E1F4BEA003DC5D3 /* AccessStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FC54D2E1F4BE3003DC5D3 /* AccessStatusType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		DD14F4052C9C9C6200F6C0CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD14F40C2C9C9CFC00F6C0CA /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
 		DD14F40E2C9C9F3100F6C0CA /* ScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerController.swift; sourceTree = "<group>"; };
+		DD4FC54B2E1F4BC2003DC5D3 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		DD4FC54D2E1F4BE3003DC5D3 /* AccessStatusType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessStatusType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 		DD14F3FD2C9C9C6100F6C0CA /* TextScanner */ = {
 			isa = PBXGroup;
 			children = (
+				DD4FC54D2E1F4BE3003DC5D3 /* AccessStatusType.swift */,
+				DD4FC54B2E1F4BC2003DC5D3 /* ScannerView.swift */,
 				DD14F40E2C9C9F3100F6C0CA /* ScannerController.swift */,
 				DD14F40C2C9C9CFC00F6C0CA /* ModelView.swift */,
 				DD14F3FE2C9C9C6100F6C0CA /* TextScannerApp.swift */,
@@ -146,7 +152,9 @@
 				DD14F40F2C9C9F3100F6C0CA /* ScannerController.swift in Sources */,
 				DD14F40D2C9C9CFC00F6C0CA /* ModelView.swift in Sources */,
 				DD14F4012C9C9C6100F6C0CA /* ContentView.swift in Sources */,
+				DD4FC54E2E1F4BEA003DC5D3 /* AccessStatusType.swift in Sources */,
 				DD14F3FF2C9C9C6100F6C0CA /* TextScannerApp.swift in Sources */,
+				DD4FC54C2E1F4BC6003DC5D3 /* ScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
